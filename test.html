@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>About Me — [Your Name]</title>
+  <meta name="description" content="Short personal introduction page">
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#7dd3fc}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;background:linear-gradient(180deg,#071028 0%,#07172a 60%);color:#e6eef6;line-height:1.45}
+    .container{max-width:960px;margin:40px auto;padding:24px}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(0,0,0,0.05));border-radius:14px;padding:24px;box-shadow:0 6px 30px rgba(2,6,23,0.6)}
+    .hero{display:flex;gap:20px;align-items:center}
+    .avatar{flex:0 0 120px;height:120px;border-radius:16px;overflow:hidden;background:linear-gradient(135deg,var(--accent),#60a5fa);display:grid;place-items:center;font-weight:700;color:#032;box-shadow:0 6px 18px rgba(0,0,0,0.6)}
+    .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+    h1{margin:0;font-size:1.6rem}
+    .subtitle{color:var(--muted);margin-top:6px;font-size:0.95rem}
+    .meta{margin-top:12px;display:flex;gap:12px;flex-wrap:wrap}
+    .meta a{color:var(--accent);text-decoration:none;padding:8px 12px;border-radius:10px;background:rgba(125,211,252,0.07);font-weight:600}
+    section{margin-top:22px}
+    h2{margin:0 0 10px 0;font-size:1.05rem}
+    p{margin:0;color:#d8e6f2}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:rgba(255,255,255,0.03);padding:8px 10px;border-radius:999px;font-weight:600;color:var(--muted)}
+    .projects{display:flex;flex-direction:column;gap:10px}
+    .proj{padding:12px;border-radius:10px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.02)}
+    footer{margin-top:18px;color:var(--muted);font-size:0.9rem;text-align:center}
+    @media (max-width:720px){.hero{flex-direction:column;align-items:flex-start}.grid{grid-template-columns:1fr}}
+    /* small utility */
+    .btn-primary{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:#012;font-weight:700;text-decoration:none}
+  </style>
+</head>
+<body>
+  <main class="container">
+    <article class="card" aria-labelledby="name">
+      <header class="hero">
+        <div class="avatar" aria-hidden="true">
+          <!-- Replace with your photo: <img src="photo.jpg" alt="Your Name"> -->
+          <span style="font-size:28px">Y</span>
+        </div>
+        <div>
+          <h1 id="name">Dulguun</h1>
+          <div class="subtitle">Developer • Designer • Lifelong learner • Student</div>
+          <div class="meta">
+            <a href="#about">About</a>
+            <a href="#skills">Python, Html, Data structure, Data analyst</a>
+            <a href="#projects">Projects</a>
+            <a class="btn-primary" href="#contact">Contact</a>
+          </div>
+        </div>
+      </header>
+
+      <section id="about">
+        <h2>About me</h2>
+        <p>
+          Hello — I’m <strong>[Your Name]</strong>. I build useful things on the web, love solving problems with code, and enjoy designing clean user experiences. I work with JavaScript, Python, and enjoy learning new tools.
+        </p>
+        <p style="margin-top:8px;color:var(--muted)">
+          Tip: replace this text with a 2-3 sentence summary: what you do, what you love, and what you’re looking for (job, projects, collaboration).
+        </p>
+      </section>
+
+      <div class="grid">
+        <section id="skills" class="card" style="padding:16px">
+          <h2>Skills</h2>
+          <div class="skills" aria-hidden="false">
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">Python</span>
+            <span class="skill">SQL</span>
+          </div>
+        </section>
+
+        <section id="projects" class="card" style="padding:16px">
+          <h2>Selected projects</h2>
+          <div class="projects">
+            <div class="proj">
+              <strong>Project Alpha</strong>
+              <div style="color:var(--muted);font-size:0.95rem">A one-line description of what it does and the tech used.</div>
+            </div>
+            <div class="proj">
+              <strong>Project Beta</strong>
+              <div style="color:var(--muted);font-size:0.95rem">A one-line description of what it does and the tech used.</div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+        <p>LinkedIn: <a href="#">linkedin.com/in/yourname</a> • GitHub: <a href="#">github.com/yourname</a></p>
+        <p style="margin-top:12px"><a class="btn-primary" href="#" download="CV-[YourName].pdf">Download CV</a></p>
+      </section>
+
+      <footer>
+        Built with ❤️ — customize this page and share it with others.
+      </footer>
+
+    </article>
+  </main>
+</body>
+</html>
